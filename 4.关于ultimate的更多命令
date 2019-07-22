@@ -1,0 +1,3 @@
+    升级ultimate 
+    
+    vim cd ~/.vim_runtime git pull --rebase
