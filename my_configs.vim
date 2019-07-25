@@ -1,1 +1,1 @@
-my_configs.vim
+/root/.vim_runtime/my_configs.vim
