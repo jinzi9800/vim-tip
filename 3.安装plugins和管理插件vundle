@@ -6,7 +6,8 @@ yum install clang （可选，但是不用的话后面这条命令也会执行�
 打开vim，执行
 :PluginInstall
 即可用vundle安装my_configs.vim里面的插件，youcompleteme很大，所以等待时间有点长，但是如果你中断了也没有关系，到youcompleme的文件夹里执行这个命令
-./install.py –all（安装所有语言库）
+python3 install.py --all（安装所有语言库）
 如果有什么没有安装的，他就会提醒你再此安装，你跟着命令提示走就可，日本人做的软件客户体验确实很好。致敬日本码农。
 
 更多可以参考：https://github.com/Valloric/YouCompleteMe
+其中可能特别要注意的是，YCM自己有升级文件，你如果用vundle的升级程序搞它，它就得用上面的命令rerun。
