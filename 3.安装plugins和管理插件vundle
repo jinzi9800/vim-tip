@@ -13,7 +13,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git
 所以我会在安装完YCM的主文件以后在Plugin前面加”注释掉YCM，这样它就不受vundle的管理了。
 如果你也想用我的vim_config.vim文件安装YCM 记得看一下前面是不是有注释标志。安的话去掉注释再继续下面内容。
 
-如果你是使用docker容器或者apt安装YCM可以很简单的执行
+如果你是使用的是apt, 安装YCM可以很简单的执行
 
 sudo apt-get install vim-youcompleteme
 
