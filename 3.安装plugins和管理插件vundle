@@ -1,14 +1,17 @@
-1 安装必要的环境：
-安装emmet和YouCompleteMe这两个好用的插件其中YCM安装还需要一个库的支持，还需要一些设置，详细可以见他的文档，摘录一些是这样的：
-yum install cmake gcc-c++ make python3-devel
+1. 安装vundle必要的环境：  
 
-注意目前的centos7 自带的源没有python3的源，请自行找一下第三方的源，这样比较方便。如果不喜欢用包管理工具喜欢自己装python去官网也请随便。
+安装emmet和YouCompleteMe这两个好用的插件其中YCM安装还需要一个库的支持，还需要一些设置，详细可以见他的文档，摘录一些是这样的：  
 
-2 安装vundle
+`yum install cmake gcc-c++ make python3-devel`
+
+注意目前的centos7 自带的源没有python3的源，请自行找一下第三方的源，这样比较方便。如果不喜欢用包管理工具喜欢自己装python去官网也请随便。  
+
+2. 安装vundle 
+
 到my_plugins目录下，执行：
 git clone https://github.com/VundleVim/Vundle.vim.git
 
-3 特别提醒想安装YCM的朋友：
+3. 特别提醒想安装YCM的朋友：
 其中可能特别要注意的是，YCM自己有升级文件，你如果用vundle的升级程序搞它，它就得用上面的命令rerun。
 所以我会在安装完YCM的主文件以后在Plugin前面加”注释掉YCM，这样它就不受vundle的管理了。
 如果你也想用我的vim_config.vim文件安装YCM 记得看一下前面是不是有注释标志。安的话去掉注释再继续下面内容。
@@ -19,7 +22,7 @@ sudo apt-get install vim-youcompleteme
 
 vim-addons install youcompleteme
 
-4 安装插件：
+4. 安装插件：
 打开vim，执行
 :PluginInstall
 
@@ -31,10 +34,10 @@ vim +PluginInstall +qall
 
 即可用vundle安装my_configs.
 
-5 安装YCM的语言库
+5. 安装YCM的语言库
 vim里面的插件，youcompleteme很大，所以等待时间有点长，但是如果你中断了也没有关系，到youcompleme的文件夹里执行这个命令
 python3 install.py --all（安装所有语言库）
 如果有什么没有安装的，他就会提醒你再此安装，你跟着命令提示走就可，日本人做的软件客户体验确实很好。致敬日本码农。
 
-6 注意注释掉vim_config.vim里面的YCM，这样你的YCM语言库就不会被vundle搞坏了。
+6. 注意注释掉vim_config.vim里面的YCM，这样你的YCM语言库就不会被vundle搞坏了。
 更多可以参考：https://github.com/Valloric/YouCompleteMe
